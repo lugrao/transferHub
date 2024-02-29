@@ -8,7 +8,7 @@ export default function CheckoutForm() {
         <h2>Detalles de contacto</h2>
         <form className="contact-info-form" action="">
           <label htmlFor="firstname">Nombre</label>
-          <input type="text" name="firstname" id="firstname" />
+          <input autoFocus="true" type="text" name="firstname" id="firstname" />
 
           <label htmlFor="lastname">Apellido</label>
           <input type="text" name="lastname" id="lastname" />
@@ -45,7 +45,7 @@ export default function CheckoutForm() {
       </div>
 
       <div className="book-and-pay">
-        <Link to={`/404`}>
+        <Link to={`/confirmation`}>
           <input type="submit" value="Reservar y pagar" />
         </Link>
       </div>
