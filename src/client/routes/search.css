@@ -12,11 +12,11 @@
   padding: 1.5rem;
 }
 
-.book-and-pay {
+.continue {
   margin: 0 auto;
 }
 
-.book-and-pay input {
+.continue input {
   width: 200px;
   height: 50px;
   font-weight: bold;
