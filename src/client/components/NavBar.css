@@ -1,9 +1,17 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    color: white;
-    background-color: #034d4d;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  color: white;
+  background-color: #034d4d;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #eeeeee;
 }
 
 h1 {
