@@ -1,4 +1,5 @@
 import "./SearchPanel.css";
+import { Link } from "react-router-dom";
 
 export default function SearchPanel() {
   return (
@@ -33,7 +34,9 @@ export default function SearchPanel() {
           </select>
         </div>
 
-        <input className="button" type="submit" value="Buscar" />
+        <Link to={`/search`}>
+          <input className="button" type="submit" value="Buscar" />
+        </Link>
       </form>
     </div>
   );
