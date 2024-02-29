@@ -1,0 +1,8 @@
+.result-item {
+  min-width: 500px;
+  max-width: 600px;
+  height: 90px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
