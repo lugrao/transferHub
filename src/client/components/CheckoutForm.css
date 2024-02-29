@@ -1,0 +1,55 @@
+.checkout-form-page {
+    padding: 1rem 0 5rem;
+}
+
+.contact-info,
+.payment {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 300px;
+  padding: 2.5rem 3rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 15px;
+}
+
+.contact-info h2,
+.payment h2 {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.contact-info-form,
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-info-form input,
+.payment-form input {
+  height: 30px;
+}
+
+.expiry-date__cvc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.expiry-date__cvc > div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.book-and-pay {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.book-and-pay input {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+}
