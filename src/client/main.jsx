@@ -6,6 +6,7 @@ import ErrorPage from "./error-page";
 import Root from "./routes/root";
 import Search from "./routes/search";
 import Checkout from "./routes/checkout";
+import Confirmation from "./routes/confirmation";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "checkout",
     element: <Checkout />,
+  },
+  {
+    path: "confirmation",
+    element: <Confirmation />,
   },
 ]);
 
