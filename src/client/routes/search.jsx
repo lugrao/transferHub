@@ -1,13 +1,21 @@
-import "./search.css"
+import "./search.css";
+import { Link } from "react-router-dom";
 import ResultItem from "../components/ResultItem";
 
 export default function Search() {
   return (
     <>
-      <div className="result-items">
-        {Array.from({ length: 5 }, (_, i) => i + 1).map((i) => {
-          return <ResultItem resultNumber={i} />;
-        })}
+      <div className="search-page">
+        <div className="result-items">
+          {Array.from({ length: 5 }, (_, i) => i + 1).map((i) => {
+            return <ResultItem resultNumber={i} />;
+          })}
+        </div>
+        <div className="book-and-pay">
+          <Link to={`/checkout`}>
+            <input type="submit" value="Reservar y pagar" />
+          </Link>
+        </div>
       </div>
     </>
   );
