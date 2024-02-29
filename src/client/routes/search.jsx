@@ -11,9 +11,9 @@ export default function Search() {
             return <ResultItem resultNumber={i} />;
           })}
         </div>
-        <div className="book-and-pay">
+        <div className="continue">
           <Link to={`/checkout`}>
-            <input type="submit" value="Reservar y pagar" />
+            <input type="submit" value="Continuar" />
           </Link>
         </div>
       </div>
