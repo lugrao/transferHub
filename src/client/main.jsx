@@ -5,6 +5,7 @@ import "./index.css";
 import ErrorPage from "./error-page";
 import Root from "./routes/root";
 import Search from "./routes/search";
+import Checkout from "./routes/checkout";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         element: <Search />,
       },
     ],
+  },
+  {
+    path: "checkout",
+    element: <Checkout />,
   },
 ]);
 
