@@ -1,7 +1,23 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
 .result-items {
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   padding: 1.5rem;
+}
+
+.book-and-pay {
+  margin: 0 auto;
+}
+
+.book-and-pay input {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
 }
