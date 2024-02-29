@@ -1,0 +1,7 @@
+.result-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 1.5rem;
+}
