@@ -29,7 +29,7 @@ export default function SearchPanel() {
           <label htmlFor="passengers">Pasajeros</label>
           <select name="passengers" id="passengers">
             {Array.from({ length: 15 }, (_, i) => i + 1).map((i) => {
-              return <option value={i}>{i}</option>;
+              return <option value={i} key={i}>{i}</option>;
             })}
           </select>
         </div>
