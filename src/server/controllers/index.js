@@ -1,6 +1,8 @@
 const controllers = {
   getTest: (req, res) => {
-    res.send("AGUANTE MESSI.");
+    res.send(JSON.stringify({
+        message: "AGUANTE MESSI."
+    }));
   },
 };
 
