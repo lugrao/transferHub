@@ -1,0 +1,33 @@
+.input-wrapper {
+  max-width: 250px;
+}
+
+.list {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 300px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.list-item:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.list-item:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.list-item-text {
+  padding: 0 17px;
+}
+
+.list-item:hover {
+  background-color: #f4f4f4;
+}
