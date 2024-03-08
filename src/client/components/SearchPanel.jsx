@@ -1,42 +1,16 @@
 import "./SearchPanel.css";
 import { Link } from "react-router-dom";
-import Autocomplete from "react-google-autocomplete";
-
-const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+import SearchLocationInput from "./SearchLocationInput";
 
 export default function SearchPanel() {
   return (
     <div className="search-panel">
       <form action="">
         <div className="form-field">
-          <label htmlFor="origin">Origen</label>
-          <Autocomplete
-            name="origin"
-            id="origin"
-            apiKey={GOOGLE_API_KEY}
-            onPlaceSelected={(place) => {
-              console.log(place);
-              console.log(place.geometry.location.lat());
-              console.log(place.geometry.location.lng());
-            }}
-            options={{ types: [] }}
-            placeholder=""
-          />
+          <SearchLocationInput label="Origen" id="origin" />
         </div>
         <div className="form-field">
-          <label htmlFor="destination">Destino</label>
-          <Autocomplete
-            name="destination"
-            id="destination"
-            apiKey={GOOGLE_API_KEY}
-            onPlaceSelected={(place) => {
-              console.log(place);
-              console.log(place.geometry.location.lat());
-              console.log(place.geometry.location.lng());
-            }}
-            options={{ types: [] }}
-            placeholder=""
-          />
+          <SearchLocationInput label="Destino" id="destination" />
         </div>
         <div className="form-field">
           <label htmlFor="date">Fecha</label>
