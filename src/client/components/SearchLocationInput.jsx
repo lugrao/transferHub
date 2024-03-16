@@ -32,6 +32,7 @@ export default function SearchLocationInput({ label, id }) {
       <label htmlFor={id}>{label}</label>
       <AutoComplete
         className="autocomplete"
+        name={id}
         id={id}
         options={options}
         onSearch={(data) => {
