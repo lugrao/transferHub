@@ -28,24 +28,22 @@ export default function SearchLocationInput({ label, id }) {
   }, [placePredictions, isPlacePredictionsLoading]);
 
   return (
-    <>
-      <div className="input-wrapper">
-        <label htmlFor={id}>{label}</label>
-        <AutoComplete
-          className="autocomplete"
-          id={id}
-          options={options}
-          onSearch={(data) => {
-            getPlacePredictions({ input: data });
-            setValue(data);
-          }}
-          value={value}
-          onSelect={(data) => {
-            console.log("onSelect", data);
-            setValue(data);
-          }}
-        />
-      </div>
-    </>
+    <div className="search-location-input-wrapper">
+      <label htmlFor={id}>{label}</label>
+      <AutoComplete
+        className="autocomplete"
+        id={id}
+        options={options}
+        onSearch={(data) => {
+          getPlacePredictions({ input: data });
+          setValue(data);
+        }}
+        value={value}
+        onSelect={(data) => {
+          console.log("onSelect", data);
+          setValue(data);
+        }}
+      />
+    </div>
   );
 }
