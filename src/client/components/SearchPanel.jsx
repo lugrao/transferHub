@@ -1,6 +1,7 @@
 import "./SearchPanel.css";
 import { Link } from "react-router-dom";
 import SearchLocationInput from "./SearchLocationInput";
+import DatePickerInput from "./DatePickerInput";
 
 export default function SearchPanel() {
   return (
@@ -13,8 +14,7 @@ export default function SearchPanel() {
           <SearchLocationInput label="Destino" id="destination" />
         </div>
         <div className="form-field">
-          <label htmlFor="date">Fecha</label>
-          <input type="date" name="date" id="date" />
+          <DatePickerInput />
         </div>
         <div className="form-field">
           <label htmlFor="time">Hora</label>
