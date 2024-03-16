@@ -1,5 +1,4 @@
-.input-wrapper {
-  max-width: 250px;
+.search-location-input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
