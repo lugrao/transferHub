@@ -4,6 +4,7 @@ import SearchLocationInput from "./SearchLocationInput";
 import DatePickerInput from "./DatePickerInput";
 import TimePickerInput from "./TimePickerInput";
 import PassengersSelect from "./PassengersSelect";
+import Button from "./Button";
 
 export default function SearchPanel() {
   return (
@@ -25,7 +26,7 @@ export default function SearchPanel() {
           <PassengersSelect />
         </div>
         <Link to={`/search`}>
-          <input className="button" type="submit" value="Buscar" />
+          <Button type="primary" >Buscar</Button>
         </Link>
       </form>
     </div>
