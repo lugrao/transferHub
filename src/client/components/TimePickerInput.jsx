@@ -6,6 +6,7 @@ export default function TimePickerInput() {
     <div className="time-picker-input-wrapper">
       <label htmlFor="time">Hora</label>
       <TimePicker
+        className="time-picker-input"
         name="time"
         id="time"
         onChange={(time, timeString) => {
@@ -13,6 +14,7 @@ export default function TimePickerInput() {
           console.log(timeString);
         }}
         format="HH:mm"
+        placeholder=""
       />
     </div>
   );
