@@ -12,6 +12,7 @@ export default function TimePickerInput() {
           console.log(time);
           console.log(timeString);
         }}
+        format="HH:mm"
       />
     </div>
   );
