@@ -12,6 +12,7 @@ export default function DatePickerInput() {
           console.log("date", date);
           console.log("dateString", dateString);
         }}
+        placeholder=""
       />
     </div>
   );
