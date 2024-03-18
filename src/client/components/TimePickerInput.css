@@ -3,3 +3,7 @@
   flex-direction: column;
   gap: 5px;
 }
+
+.time-picker-input {
+  width: 100px;
+}
