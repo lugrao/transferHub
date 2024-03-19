@@ -4,11 +4,16 @@ import { AutoComplete } from "antd";
 import useGoogle from "react-google-autocomplete/lib/usePlacesAutocompleteService";
 
 export default function SearchLocationInput({ label, id }) {
-  const { placePredictions, getPlacePredictions, isPlacePredictionsLoading } =
-    useGoogle({
-      apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
-      debounce: 600,
-    });
+  const {
+    placesService,
+    placePredictions,
+    getPlacePredictions,
+    isPlacePredictionsLoading,
+  } = useGoogle({
+    apiKey: import.meta.env.VITE_GOOGLE_API_KEY,
+    debounce: 600,
+    language: "es",
+  });
   const [options, setOptions] = useState([]);
   const [value, setValue] = useState("");
 
@@ -42,6 +47,22 @@ export default function SearchLocationInput({ label, id }) {
         value={value}
         onSelect={(data) => {
           console.log("onSelect", data);
+          console.log("placePredictions data", placePredictions);
+          console.log(
+            "placesService detail",
+            placesService.getDetails(
+              {
+                placeId: placePredictions.filter(
+                  (place) => place.description === data
+                )[0].place_id,
+              },
+              (placeDetails) =>
+                console.log({
+                  lat: placeDetails.geometry.location.lat(),
+                  lng: placeDetails.geometry.location.lng(),
+                })
+            )
+          );
           setValue(data);
         }}
       />
