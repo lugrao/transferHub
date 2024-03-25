@@ -5,7 +5,7 @@ dotenv.config();
 const getHotelbedsData = (url) =>
   fetch(url, {
     headers: {
-      "Api-Key": process.env.API_KEY,
+      "Api-Key": process.env.HOTELBEDS_API_KEY,
     },
   });
 
