@@ -10,13 +10,6 @@ const getHotelbedsData = (url) =>
   });
 
 const controllers = {
-  getTest: (req, res) => {
-    res.send(
-      JSON.stringify({
-        message: "AGUANTE MESSI.",
-      })
-    );
-  },
   getCountries: async (req, res) => {
     try {
       const response = await getHotelbedsData(
